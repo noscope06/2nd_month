@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 2nd Month, My Wifey ♡</title>
+    
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts for Elegant Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:ital,wght@0,300;0,400;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['"Playfair Display"', 'serif'],
+                        'sans': ['"Lato"', 'sans-serif'],
+                        'script': ['"Great Vibes"', 'cursive'],
+                    },
+                    colors: {
+                        'aesthetic-cream': '#fcfaf8',
+                        'aesthetic-blush': '#f4e3e3',
+                        'aesthetic-rose': '#d9a9a9',
+                        'aesthetic-dark': '#4a4040',
+                        'aesthetic-gray': '#8c8282',
+                    },
+                    boxShadow: {
+                        'soft': '0 20px 40px -10px rgba(217, 169, 169, 0.15)',
+                        'polaroid': '0 10px 25px -5px rgba(0, 0, 0, 0.08)',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            background-color: #fcfaf8;
+            color: #4a4040;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        /* Pure CSS Floating Hearts (No Emojis) */
+        .css-heart {
+            position: fixed;
+            width: 16px; 
+            height: 16px;
+            background-color: rgba(217, 169, 169, 0.3);
+            transform: rotate(-45deg);
+            pointer-events: none;
+            z-index: 0;
+            animation: floatUp 15s linear infinite;
+        }
+        .css-heart::before, .css-heart::after {
+            content: '';
+            position: absolute;
+            width: 16px; 
+            height: 16px;
+            background-color: inherit;
+            border-radius: 50%;
+        }
+        .css-heart::before {
+            top: -8px; 
+            left: 0;
+        }
+        .css-heart::after {
+            top: 0; 
+            left: 8px;
+        }
+
+        @keyframes floatUp {
+            0% { transform: translateY(110vh) rotate(-45deg) scale(0.8); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(-10vh) rotate(-45deg) scale(1.2); opacity: 0; }
+        }
+
+        /* Polaroid Aesthetics */
+        .polaroid-frame {
+            background: #ffffff;
+            padding: 12px 12px 48px 12px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            cursor: pointer;
+            z-index: 10;
+        }
+        .polaroid-frame img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            filter: sepia(10%) contrast(95%);
+            transition: filter 0.5s ease;
+        }
+        .polaroid-frame:hover {
+            transform: scale(1.05) rotate(0deg) translateY(-10px) !important;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+            z-index: 20;
+        }
+        .polaroid-frame:hover img {
+            filter: sepia(0%) contrast(100%);
+        }
+
+        /* Glassmorphism Timer Cards */
+        .glass-timer {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+        }
+
+        /* Elegant Fade In Animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Bouquet SVG Path Animation */
+        .bouquet-path {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            transition: stroke-dashoffset 3s ease-in-out, fill 2s ease-in 2s;
+        }
+        .show-bouquet .bouquet-path {
+            stroke-dashoffset: 0;
+        }
+
+        /* Hide scrollbar for cleaner look */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #fcfaf8; }
+        ::-webkit-scrollbar-thumb { background: #d9a9a9; border-radius: 4px; }
+    
+        /* ===== Final premium layer ===== */
+        .memory-card {
+            overflow: hidden;
+        }
+        .memory-card img {
+            transition: transform .9s cubic-bezier(.2,.8,.2,1), filter .7s ease;
+        }
+        .memory-card:hover img {
+            transform: scale(1.045);
+        }
+        .memory-card figcaption {
+            position: absolute;
+            left: 14px;
+            right: 14px;
+            bottom: 12px;
+            color: #4a4040;
+            font-family: "Playfair Display", serif;
+            font-size: 15px;
+            font-style: italic;
+            text-align: center;
+            pointer-events: none;
+        }
+
+        .surprise-button {
+            color: #4a4040;
+            border: 1px solid rgba(217,169,169,.8);
+            background: rgba(255,255,255,.48);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            box-shadow: 0 16px 45px rgba(217,169,169,.13), inset 0 1px 0 rgba(255,255,255,.9);
+            transition: transform .3s ease, background .3s ease, box-shadow .3s ease;
+        }
+        .surprise-button:hover {
+            transform: translateY(-3px);
+            background: rgba(217,169,169,.22);
+            box-shadow: 0 20px 55px rgba(217,169,169,.22);
+        }
+
+        .surprise-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 100;
+            display: grid;
+            place-items: center;
+            padding: 18px;
+            background:
+                radial-gradient(circle at 15% 20%, rgba(244,205,214,.75), transparent 30%),
+                radial-gradient(circle at 85% 75%, rgba(202,216,244,.65), transparent 34%),
+                rgba(252,250,248,.52);
+            backdrop-filter: blur(30px) saturate(145%);
+            -webkit-backdrop-filter: blur(30px) saturate(145%);
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: opacity .45s ease, visibility .45s ease;
+        }
+        .surprise-overlay.open {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        .surprise-heart-field {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .burst-heart {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: var(--size);
+            height: var(--size);
+            transform: translate(-50%,-50%) rotate(-45deg);
+            background: rgba(217,169,169,.82);
+            opacity: 0;
+            filter: blur(.1px);
+            animation: burstHeart var(--duration) cubic-bezier(.12,.75,.2,1) forwards;
+        }
+        .burst-heart::before,
+        .burst-heart::after {
+            content: "";
+            position: absolute;
+            width: var(--size);
+            height: var(--size);
+            border-radius: 50%;
+            background: inherit;
+        }
+        .burst-heart::before { top: calc(var(--size) * -.5); left: 0; }
+        .burst-heart::after { top: 0; left: calc(var(--size) * .5); }
+
+        @keyframes burstHeart {
+            0% {
+                opacity: 0;
+                transform: translate(-50%,-50%) rotate(-45deg) scale(.3);
+            }
+            12% { opacity: .82; }
+            100% {
+                opacity: 0;
+                transform:
+                    translate(calc(-50% + var(--x)), calc(-50% + var(--y)))
+                    rotate(var(--rotation)) scale(var(--scale));
+            }
+        }
+
+        .surprise-glass {
+            width: min(820px, 94vw);
+            height: min(820px, 92svh);
+            min-height: 650px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 30px 26px 24px;
+            border-radius: 38px;
+            border: 1px solid rgba(255,255,255,.78);
+            background: linear-gradient(145deg, rgba(255,255,255,.72), rgba(255,255,255,.34));
+            box-shadow:
+                0 40px 120px rgba(74,64,64,.18),
+                inset 0 1px 0 rgba(255,255,255,.92);
+            backdrop-filter: blur(28px) saturate(145%);
+            -webkit-backdrop-filter: blur(28px) saturate(145%);
+            transform: translateY(18px) scale(.97);
+            transition: transform .65s cubic-bezier(.2,.8,.2,1);
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .surprise-overlay.open .surprise-glass {
+            transform: translateY(0) scale(1);
+        }
+
+        .surprise-close {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            width: 42px;
+            height: 42px;
+            border: 1px solid rgba(255,255,255,.85);
+            border-radius: 50%;
+            background: rgba(255,255,255,.48);
+            color: #4a4040;
+            font-size: 26px;
+            line-height: 1;
+            cursor: pointer;
+            z-index: 20;
+            transition: transform .25s ease, background .25s ease;
+        }
+        .surprise-close:hover {
+            transform: rotate(8deg);
+            background: rgba(255,255,255,.78);
+        }
+
+        .surprise-meta {
+            flex: 0 0 auto;
+            font-family: "Lato", sans-serif;
+            font-size: 9px;
+            letter-spacing: .25em;
+            color: #9a7d7d;
+            text-transform: uppercase;
+            margin: 0 0 14px;
+            text-align: center;
+        }
+
+        /* The slideshow is now a fixed-size stage.
+           Every image gets exactly the same visual footprint. */
+        .surprise-photo-wrap {
+            position: relative;
+            flex: 0 0 300px;
+            width: min(330px, 68vw);
+            height: 300px;
+            display: grid;
+            place-items: center;
+            margin: 0 auto 18px;
+        }
+
+        .surprise-photo-glow {
+            position: absolute;
+            width: 82%;
+            height: 82%;
+            border-radius: 50%;
+            background: rgba(217,169,169,.32);
+            filter: blur(38px);
+        }
+
+        #surprise-photo {
+            position: relative;
+            z-index: 1;
+            display: block;
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 24px;
+            border: 7px solid rgba(255,255,255,.72);
+            box-sizing: border-box;
+            background: rgba(255,255,255,.45);
+            box-shadow: 0 28px 65px rgba(74,64,64,.17);
+            opacity: 0;
+            transform: scale(.95);
+            transition: opacity .45s ease, transform .55s cubic-bezier(.2,.8,.2,1);
+        }
+
+        #surprise-photo.show {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        /* Text has its own dedicated area — it can never sit behind the image. */
+        .surprise-copy {
+            flex: 0 0 auto;
+            width: min(650px, 100%);
+            min-height: 128px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: center;
+            color: #4a4040;
+            box-sizing: border-box;
+        }
+
+        .surprise-copy #surprise-kicker {
+            margin: 0 0 9px;
+            font-family: "Lato", sans-serif;
+            font-size: 9px;
+            line-height: 1.2;
+            letter-spacing: .24em;
+            text-transform: uppercase;
+            color: #a88787;
+        }
+
+        .surprise-copy h3 {
+            margin: 0 auto;
+            max-width: 650px;
+            font-family: "Playfair Display", serif;
+            font-size: clamp(27px, 4.5vw, 44px);
+            line-height: 1.08;
+            font-weight: 400;
+            font-style: italic;
+            letter-spacing: -.035em;
+        }
+
+        .surprise-copy #surprise-subtitle {
+            margin: 10px auto 0;
+            max-width: 560px;
+            color: #8c8282;
+            font-family: "Lato", sans-serif;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 1.55;
+        }
+
+        .surprise-dots {
+            flex: 0 0 auto;
+            display: flex;
+            gap: 6px;
+            margin: 9px 0 14px;
+        }
+
+        .surprise-dot {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: rgba(140,130,130,.25);
+            transition: all .35s ease;
+        }
+
+        .surprise-dot.active {
+            width: 18px;
+            border-radius: 99px;
+            background: #d9a9a9;
+        }
+
+        .surprise-music {
+            flex: 0 0 auto;
+            width: min(440px, 100%);
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            padding: 9px 11px;
+            border-radius: 18px;
+            border: 1px solid rgba(255,255,255,.78);
+            background: rgba(255,255,255,.34);
+            box-sizing: border-box;
+        }
+
+        #surprise-music-toggle {
+            width: 34px;
+            height: 34px;
+            flex: 0 0 34px;
+            border: 0;
+            border-radius: 50%;
+            background: rgba(217,169,169,.25);
+            color: #6f5e5e;
+            cursor: pointer;
+        }
+
+        .music-copy {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            min-width: 0;
+        }
+
+        .music-copy span {
+            font-family: "Lato", sans-serif;
+            font-size: 11px;
+            color: #5d5151;
+        }
+
+        .music-copy small {
+            font-size: 9px;
+            color: #9a8d8d;
+            margin-top: 2px;
+        }
+
+        .music-wave {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            height: 24px;
+        }
+
+        .music-wave i {
+            display: block;
+            width: 2px;
+            height: 7px;
+            border-radius: 99px;
+            background: #c8959b;
+            animation: wave 1s ease-in-out infinite alternate;
+        }
+
+        .music-wave i:nth-child(2){animation-delay:.12s;height:13px}
+        .music-wave i:nth-child(3){animation-delay:.24s;height:18px}
+        .music-wave i:nth-child(4){animation-delay:.36s;height:11px}
+        .music-wave i:nth-child(5){animation-delay:.48s;height:15px}
+
+        @keyframes wave {
+            to { transform:scaleY(.35); opacity:.55; }
+        }
+
+        .gallery-lightbox {
+            position: fixed;
+            inset: 0;
+            z-index: 110;
+            display: grid;
+            place-items: center;
+            padding: 18px;
+            background: rgba(252,250,248,.54);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: .35s ease;
+        }
+        .gallery-lightbox.open {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+        .lightbox-card {
+            position: relative;
+            width: min(720px, 94vw);
+            height: min(84svh, 820px);
+            border-radius: 30px;
+            padding: 8px;
+            background: rgba(255,255,255,.58);
+            border: 1px solid rgba(255,255,255,.82);
+            box-shadow: 0 35px 100px rgba(74,64,64,.2);
+        }
+        .lightbox-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 24px;
+            background: rgba(74,64,64,.05);
+        }
+        .lightbox-close {
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            width: 40px;
+            height: 40px;
+            border: 1px solid rgba(255,255,255,.9);
+            border-radius: 50%;
+            background: rgba(255,255,255,.85);
+            color: #4a4040;
+            font-size: 25px;
+            z-index: 3;
+            cursor: pointer;
+        }
+
+        @media (max-width: 640px) {
+            .surprise-overlay {
+                padding: 10px;
+            }
+
+            .surprise-glass {
+                width: 96vw;
+                height: 94svh;
+                min-height: 0;
+                padding: 22px 16px 16px;
+                border-radius: 30px;
+            }
+
+            .surprise-close {
+                top: 12px;
+                right: 12px;
+                width: 38px;
+                height: 38px;
+                font-size: 23px;
+            }
+
+            .surprise-meta {
+                margin-bottom: 10px;
+                font-size: 7px;
+                letter-spacing: .2em;
+            }
+
+            .surprise-photo-wrap {
+                flex-basis: min(58vw, 270px);
+                width: min(58vw, 270px);
+                height: min(58vw, 270px);
+                margin-bottom: 14px;
+            }
+
+            #surprise-photo {
+                border-width: 6px;
+                border-radius: 20px;
+            }
+
+            .surprise-copy {
+                min-height: 116px;
+            }
+
+            .surprise-copy h3 {
+                font-size: clamp(24px, 7.2vw, 31px);
+                line-height: 1.08;
+            }
+
+            .surprise-copy #surprise-subtitle {
+                margin-top: 8px;
+                font-size: 11px;
+                line-height: 1.45;
+            }
+
+            .surprise-copy #surprise-kicker {
+                font-size: 7px;
+                margin-bottom: 7px;
+            }
+
+            .surprise-dots {
+                margin: 6px 0 10px;
+            }
+
+            .surprise-music {
+                padding: 8px 9px;
+            }
+        }
+
+        @media (max-height: 700px) and (min-width: 641px) {
+            .surprise-glass {
+                height: 94svh;
+                min-height: 0;
+                padding-top: 20px;
+            }
+
+            .surprise-photo-wrap {
+                flex-basis: 250px;
+                height: 250px;
+                margin-bottom: 12px;
+            }
+
+            .surprise-copy {
+                min-height: 110px;
+            }
+        }
+
+    </style>
+</head>
+<body class="antialiased font-sans selection:bg-aesthetic-blush selection:text-aesthetic-dark">
+
+    <div id="heart-container" class="fixed inset-0 overflow-hidden pointer-events-none z-0"></div>
+
+    <!-- Fixed Music Player Button -->
+    <button id="music-toggle" class="fixed bottom-8 right-8 z-50 bg-white/80 backdrop-blur-md p-4 rounded-full shadow-polaroid border border-gray-100 hover:scale-110 transition-transform duration-300 group">
+        <!-- Play Icon -->
+        <svg id="icon-play" class="w-6 h-6 text-aesthetic-dark group-hover:text-aesthetic-rose transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        <!-- Pause Icon (Hidden initially) -->
+        <svg id="icon-pause" class="w-6 h-6 text-aesthetic-dark hidden group-hover:text-aesthetic-rose transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+    </button>
+    <audio id="bg-music" src="assets/a-thousand-years.mp3" loop></audio>
+
+    <main class="relative z-10">
+        
+        <header class="min-h-screen flex flex-col items-center justify-center px-4 relative">
+            <div class="text-center max-w-3xl mx-auto fade-in visible">
+                <p class="font-sans text-aesthetic-gray tracking-[0.3em] uppercase text-sm mb-6">July 20, 2026</p>
+                <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl text-aesthetic-dark font-normal italic mb-6 leading-tight">
+                    Happy 2nd Month,<br>
+                    <span class="text-aesthetic-rose">My Wifey.</span>
+                </h1>
+                <p class="font-sans font-light text-lg md:text-xl text-aesthetic-gray max-w-lg mx-auto">
+                    Two months of us — two months of little moments, late conversations, and a story that began on your birthday.
+                </p>
+                
+                <div class="mt-16 flex justify-center animate-bounce">
+                    <svg class="w-6 h-6 text-aesthetic-rose opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    </svg>
+                </div>
+            </div>
+        </header>
+
+        <section class="py-24 px-4 w-full relative z-10" id="timer-section">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12 fade-in">
+                    <h2 class="font-serif text-3xl md:text-4xl text-aesthetic-dark italic">Time Since You Became Mine</h2>
+                    <div class="w-16 h-px bg-aesthetic-rose mx-auto mt-6"></div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-6 text-center fade-in">
+                    <!-- Timer Cards -->
+                    <div class="glass-timer shadow-soft rounded-2xl p-6 flex flex-col justify-center items-center">
+                        <span id="t-months" class="font-serif text-4xl md:text-5xl text-aesthetic-dark mb-2">0</span>
+                        <span class="font-sans text-xs tracking-widest uppercase text-aesthetic-gray">Months</span>
+                    </div>
+                    <div class="glass-timer shadow-soft rounded-2xl p-6 flex flex-col justify-center items-center">
+                        <span id="t-days" class="font-serif text-4xl md:text-5xl text-aesthetic-dark mb-2">0</span>
+                        <span class="font-sans text-xs tracking-widest uppercase text-aesthetic-gray">Days</span>
+                    </div>
+                    <div class="glass-timer shadow-soft rounded-2xl p-6 flex flex-col justify-center items-center">
+                        <span id="t-hours" class="font-serif text-4xl md:text-5xl text-aesthetic-dark mb-2">0</span>
+                        <span class="font-sans text-xs tracking-widest uppercase text-aesthetic-gray">Hours</span>
+                    </div>
+                    <div class="glass-timer shadow-soft rounded-2xl p-6 flex flex-col justify-center items-center">
+                        <span id="t-mins" class="font-serif text-4xl md:text-5xl text-aesthetic-dark mb-2">0</span>
+                        <span class="font-sans text-xs tracking-widest uppercase text-aesthetic-gray">Minutes</span>
+                    </div>
+                    <div class="glass-timer shadow-soft rounded-2xl p-6 flex flex-col justify-center items-center col-span-2 md:col-span-1">
+                        <span id="t-secs" class="font-serif text-4xl md:text-5xl text-aesthetic-dark mb-2">0</span>
+                        <span class="font-sans text-xs tracking-widest uppercase text-aesthetic-gray">Seconds</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-32 px-6 w-full max-w-3xl mx-auto fade-in">
+            <div class="bg-white p-12 md:p-16 rounded-3xl shadow-soft relative">
+                <!-- Decorative Quotes -->
+                <svg class="absolute top-10 left-10 w-12 h-12 text-aesthetic-blush opacity-50" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                </svg>
+
+                <div class="relative z-10 font-serif text-lg md:text-xl leading-relaxed text-aesthetic-dark mt-8 space-y-6">
+                    <p>My dearest Babbyyyy,</p>
+                    <p>
+                        Happy 2nd month to my beautiful cutie pie, my perfect life partner. It feels like just yesterday it was July 20th, the perfect day we met and celebrated your birthday. 
+                    </p>
+                    <p>
+                        We haven't been able to meet in person yet during these past two months. There are thousands of miles separating India and the Philippines, but honestly? It doesn't matter. The distance only proves how strong our love is. Every call, every message, every smile you give me through the screen makes you feel like you are sitting right next to me.
+                    </p>
+                    <p>
+                        You are everything I have ever wanted. You are absolutely perfect in every single way. I am waiting for the day I can finally hold you, look into your eyes, and tell you all of this in person. Until then, my heart is entirely yours. I will always love you.
+                    </p>
+                    <div class="pt-8 text-right">
+                        <p class="font-script text-4xl text-aesthetic-rose">Yours forever,</p>
+                        <p class="font-script text-5xl text-aesthetic-dark mt-2">Babbyyyy</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 px-4 w-full overflow-hidden fade-in">
+            <div class="text-center mb-20">
+                <h2 class="font-serif text-3xl md:text-4xl text-aesthetic-dark italic">Our Captured Moments</h2>
+                <div class="w-16 h-px bg-aesthetic-rose mx-auto mt-6"></div>
+            </div>
+
+            <!-- Scattered Gallery — all supplied photos -->
+            <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16 px-4 md:px-12" id="memory-grid">
+
+                <figure class="polaroid-frame memory-card transform md:rotate-[-3deg] md:translate-y-8">
+                    <img src="assets/her-selfie.webp" alt="A little moment of her" loading="lazy">
+                    <figcaption>A little moment of you.</figcaption>
+                </figure>
+
+                <figure class="polaroid-frame memory-card transform md:rotate-[2deg] md:translate-y-[-10px]">
+                    <img src="assets/her-closeup.webp" alt="A favorite close-up memory" loading="lazy">
+                    <figcaption>One of my favorite versions of you.</figcaption>
+                </figure>
+
+                <figure class="polaroid-frame memory-card transform md:rotate-[-1deg] md:translate-y-12">
+                    <img src="assets/her-resort.webp" alt="A beautiful memory outdoors" loading="lazy">
+                    <figcaption>A moment I’d keep forever.</figcaption>
+                </figure>
+
+                <figure class="polaroid-frame memory-card transform md:rotate-[4deg]">
+                    <img src="assets/devansh-1.webp" alt="A memory from Devansh" loading="lazy">
+                    <figcaption>Somewhere in the story, there’s me too.</figcaption>
+                </figure>
+
+                <figure class="polaroid-frame memory-card transform md:rotate-[1deg] md:translate-y-[-20px]">
+                    <img src="assets/devansh-2.webp" alt="Another memory from Devansh" loading="lazy">
+                    <figcaption>The other half of this little story.</figcaption>
+                </figure>
+
+                <figure class="polaroid-frame memory-card transform md:rotate-[-4deg] md:translate-y-10">
+                    <img src="assets/her-stairs.webp" alt="A candid memory of her" loading="lazy">
+                    <figcaption>That smile I’d choose again.</figcaption>
+                </figure>
+
+                <figure class="polaroid-frame memory-card transform md:rotate-[2deg]">
+                    <img src="assets/together.webp" alt="A photo of us together" loading="lazy">
+                    <figcaption>And then there’s us. ♡</figcaption>
+                </figure>
+
+                <figure class="polaroid-frame memory-card transform md:rotate-[-2deg] md:translate-y-6">
+                    <img src="assets/her-cafe.webp" alt="A quiet memory" loading="lazy">
+                    <figcaption>A little piece of you to keep close.</figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+        <section class="py-32 px-4 text-center fade-in" id="surprise-section">
+            <div class="max-w-3xl mx-auto">
+                <p class="font-sans text-aesthetic-gray tracking-[0.3em] uppercase text-xs mb-5">One last little thing</p>
+                <h2 class="font-serif text-3xl md:text-5xl text-aesthetic-dark italic mb-6">A cute gift for uhhh</h2>
+                <p class="font-sans font-light text-aesthetic-gray max-w-xl mx-auto mb-10">
+                    I couldn't put the whole feeling into a message, so I made you a tiny world instead.
+                </p>
+
+                <button id="surprise-btn"
+                    class="surprise-button font-sans tracking-[0.22em] uppercase text-xs md:text-sm px-10 py-4 rounded-full">
+                    One Tiny Surprise
+                </button>
+            </div>
+        </section>
+
+        <!-- Full-screen surprise -->
+        <div id="surprise-overlay" class="surprise-overlay" aria-hidden="true">
+            <div id="surprise-heart-field" class="surprise-heart-field"></div>
+
+            <div class="surprise-glass">
+                <button id="surprise-close" class="surprise-close" aria-label="Close surprise">×</button>
+
+                <div class="surprise-meta">20 JULY 2026 · FOR MY WIFEY</div>
+
+                <div class="surprise-photo-wrap">
+                    <div class="surprise-photo-glow"></div>
+                    <img id="surprise-photo" src="assets/her-selfie.webp" alt="A memory">
+                </div>
+
+                <div class="surprise-copy">
+                    <p id="surprise-kicker">just a little reminder</p>
+                    <h3 id="surprise-title">You make ordinary moments feel special.</h3>
+                    <p id="surprise-subtitle">And somehow, I still get to call this story ours.</p>
+                </div>
+
+                <div class="surprise-dots" id="surprise-dots"></div>
+
+                <div class="surprise-music">
+                    <button id="surprise-music-toggle" aria-label="Pause music">
+                        <span id="surprise-music-icon">Ⅱ</span>
+                    </button>
+                    <div class="music-copy">
+                        <span>A Thousand Years</span>
+                        <small>our little soundtrack</small>
+                    </div>
+                    <div class="music-wave" aria-hidden="true">
+                        <i></i><i></i><i></i><i></i><i></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="py-12 text-center text-aesthetic-gray text-sm border-t border-gray-100">
+            <p class="font-serif italic mb-2">Designed with love across the miles</p>
+            <p class="font-sans tracking-widest uppercase text-xs">2026 © My Babbyyyy you're always my favorite person...</p>
+        </footer>
+
+    </main>
+
+    <script>
+        // 1. Generate Floating Aesthetic CSS Hearts
+        const heartContainer = document.getElementById('heart-container');
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('css-heart');
+            // Random horizontal position
+            heart.style.left = Math.random() * 100 + 'vw';
+            // Random animation duration between 10s and 20s
+            const duration = Math.random() * 10 + 10;
+            heart.style.animationDuration = duration + 's';
+            // Random slight scale
+            heart.style.transform = `scale(${Math.random() * 0.5 + 0.8})`;
+            
+            heartContainer.appendChild(heart);
+
+            // Clean up
+            setTimeout(() => {
+                heart.remove();
+            }, duration * 1000);
+        }
+        // Initial batch
+        for(let i=0; i<15; i++) {
+            setTimeout(createHeart, Math.random() * 5000);
+        }
+        // Continuous creation
+        setInterval(createHeart, 2000);
+
+        // 2. Accurate Relationship Timer (Since July 20, 2026)
+        const startDate = new Date('2026-07-20T00:00:00');
+        
+        function updateTimer() {
+            const now = new Date();
+            
+            // If date hasn't happened yet (fallback)
+            if(now < startDate) return;
+
+            // Calculate months safely
+            let months = (now.getFullYear() - startDate.getFullYear()) * 12 + (now.getMonth() - startDate.getMonth());
+            
+            // Adjust if current day of month is earlier than start day
+            let tempDate = new Date(startDate);
+            tempDate.setMonth(tempDate.getMonth() + months);
+            if (now < tempDate) {
+                months--;
+                tempDate = new Date(startDate);
+                tempDate.setMonth(tempDate.getMonth() + months);
+            }
+
+            // Remaining milliseconds after calculating full months
+            let diff = now - tempDate;
+            
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById('t-months').innerText = months;
+            document.getElementById('t-days').innerText = days;
+            document.getElementById('t-hours').innerText = hours;
+            document.getElementById('t-mins').innerText = mins;
+            document.getElementById('t-secs').innerText = secs;
+        }
+        setInterval(updateTimer, 1000);
+        updateTimer();
+
+        // 3. Scroll Reveal Animation (Intersection Observer)
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+
+        fadeElements.forEach(el => observer.observe(el));
+
+        // 4. Gallery lightbox
+        const galleryLightbox = document.createElement('div');
+        galleryLightbox.className = 'gallery-lightbox';
+        galleryLightbox.id = 'gallery-lightbox';
+        galleryLightbox.innerHTML = `
+            <div class="lightbox-card">
+                <button class="lightbox-close" aria-label="Close photo">×</button>
+                <img alt="Expanded memory">
+            </div>`;
+        document.body.appendChild(galleryLightbox);
+
+        const lightboxImage = galleryLightbox.querySelector('img');
+        const lightboxClose = galleryLightbox.querySelector('.lightbox-close');
+
+        document.querySelectorAll('.memory-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const img = card.querySelector('img');
+                lightboxImage.src = img.src;
+                lightboxImage.alt = img.alt;
+                galleryLightbox.classList.add('open');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        function closeLightbox() {
+            galleryLightbox.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+        lightboxClose.addEventListener('click', closeLightbox);
+        galleryLightbox.addEventListener('click', (e) => {
+            if (e.target === galleryLightbox) closeLightbox();
+        });
+
+        // Shared audio controls (declared before surprise handlers)
+        const musicToggle = document.getElementById('music-toggle');
+        const audio = document.getElementById('bg-music');
+        const iconPlay = document.getElementById('icon-play');
+        const iconPause = document.getElementById('icon-pause');
+        let isPlaying = false;
+
+        // 5. Full-screen "One Tiny Surprise" experience
+        const surpriseBtn = document.getElementById('surprise-btn');
+        const surpriseOverlay = document.getElementById('surprise-overlay');
+        const surpriseClose = document.getElementById('surprise-close');
+        const heartField = document.getElementById('surprise-heart-field');
+        const surprisePhoto = document.getElementById('surprise-photo');
+        const surpriseKicker = document.getElementById('surprise-kicker');
+        const surpriseTitle = document.getElementById('surprise-title');
+        const surpriseSubtitle = document.getElementById('surprise-subtitle');
+        const surpriseDots = document.getElementById('surprise-dots');
+        const surpriseMusicToggle = document.getElementById('surprise-music-toggle');
+        const surpriseMusicIcon = document.getElementById('surprise-music-icon');
+
+        const surpriseSlides = [
+            {
+                src: 'assets/her-selfie.webp',
+                kicker: 'a little reminder',
+                title: 'You make ordinary moments feel special.',
+                subtitle: 'And somehow, I still get to call this story ours.'
+            },
+            {
+                src: 'assets/her-closeup.webp',
+                kicker: 'my favorite kind of memory',
+                title: 'Some smiles just stay with you.',
+                subtitle: 'This one has been living rent-free in my heart.'
+            },
+            {
+                src: 'assets/her-resort.webp',
+                kicker: 'one little moment',
+                title: 'If I could keep a feeling in a photograph...',
+                subtitle: 'I think it would look a little like this.'
+            },
+            {
+                src: 'assets/her-stairs.webp',
+                kicker: 'still my favorite view',
+                title: 'There you are.',
+                subtitle: 'The person who somehow made this little story feel so big.'
+            },
+            {
+                src: 'assets/her-cafe.webp',
+                kicker: 'another tiny memory',
+                title: 'A thousand little things.',
+                subtitle: 'And somehow, I keep finding another reason to smile.'
+            },
+            {
+                src: 'assets/together.webp',
+                kicker: 'the part I love most',
+                title: 'And then there’s us.',
+                subtitle: 'Two months down. One beautiful story just beginning.'
+            }
+        ];
+
+        let surpriseIndex = 0;
+        let surpriseTimer = null;
+        let surpriseOpen = false;
+
+        surpriseSlides.forEach((_, i) => {
+            const dot = document.createElement('span');
+            dot.className = 'surprise-dot';
+            if (i === 0) dot.classList.add('active');
+            surpriseDots.appendChild(dot);
+        });
+
+        function burstHearts() {
+            heartField.innerHTML = '';
+            const count = window.innerWidth < 600 ? 34 : 52;
+
+            for (let i = 0; i < count; i++) {
+                const h = document.createElement('span');
+                h.className = 'burst-heart';
+
+                const angle = Math.random() * Math.PI * 2;
+                const radius = Math.min(window.innerWidth, window.innerHeight) *
+                    (0.32 + Math.random() * 0.48);
+
+                h.style.setProperty('--x', `${Math.cos(angle) * radius}px`);
+                h.style.setProperty('--y', `${Math.sin(angle) * radius}px`);
+                h.style.setProperty('--size', `${5 + Math.random() * 8}px`);
+                h.style.setProperty('--scale', `${0.65 + Math.random() * 1.1}`);
+                h.style.setProperty('--rotation', `${Math.random() * 70 - 35}deg`);
+                h.style.setProperty('--duration', `${1.05 + Math.random() * 1.1}s`);
+                h.style.animationDelay = `${Math.random() * .35}s`;
+
+                heartField.appendChild(h);
+            }
+        }
+
+        function renderSurpriseSlide(index) {
+            surpriseIndex = index;
+            const slide = surpriseSlides[index];
+
+            surprisePhoto.classList.remove('show');
+
+            setTimeout(() => {
+                surprisePhoto.src = slide.src;
+                surprisePhoto.alt = slide.title;
+                surpriseKicker.textContent = slide.kicker;
+                surpriseTitle.textContent = slide.title;
+                surpriseSubtitle.textContent = slide.subtitle;
+                surprisePhoto.classList.add('show');
+            }, 170);
+
+            [...surpriseDots.children].forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+        }
+
+        function startSurpriseLoop() {
+            clearInterval(surpriseTimer);
+            surpriseTimer = setInterval(() => {
+                if (!surpriseOpen) return;
+                const next = (surpriseIndex + 1) % surpriseSlides.length;
+                renderSurpriseSlide(next);
+            }, 3900);
+        }
+
+        function openSurprise() {
+            surpriseOpen = true;
+            surpriseOverlay.classList.add('open');
+            surpriseOverlay.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+
+            renderSurpriseSlide(0);
+            burstHearts();
+
+            // User interaction with the button gives the browser permission to play audio.
+            audio.currentTime = 0;
+            audio.play().then(() => {
+                isPlaying = true;
+                iconPlay.classList.add('hidden');
+                iconPause.classList.remove('hidden');
+                surpriseMusicIcon.textContent = 'Ⅱ';
+            }).catch(() => {
+                surpriseMusicIcon.textContent = '▶';
+            });
+
+            startSurpriseLoop();
+        }
+
+        function closeSurprise() {
+            surpriseOpen = false;
+            surpriseOverlay.classList.remove('open');
+            surpriseOverlay.setAttribute('aria-hidden', 'true');
+            clearInterval(surpriseTimer);
+            document.body.style.overflow = '';
+        }
+
+        surpriseBtn.addEventListener('click', openSurprise);
+        surpriseClose.addEventListener('click', closeSurprise);
+
+        surpriseOverlay.addEventListener('click', (e) => {
+            if (e.target === surpriseOverlay) closeSurprise();
+        });
+
+        surpriseMusicToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+
+            if (audio.paused) {
+                audio.play().then(() => {
+                    isPlaying = true;
+                    iconPlay.classList.add('hidden');
+                    iconPause.classList.remove('hidden');
+                    surpriseMusicIcon.textContent = 'Ⅱ';
+                }).catch(() => {});
+            } else {
+                audio.pause();
+                isPlaying = false;
+                iconPlay.classList.remove('hidden');
+                iconPause.classList.add('hidden');
+                surpriseMusicIcon.textContent = '▶';
+            }
+        });
+
+        // 6. Main music player
+        musicToggle.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play().then(() => {
+                    isPlaying = true;
+                    iconPlay.classList.add('hidden');
+                    iconPause.classList.remove('hidden');
+                    surpriseMusicIcon.textContent = 'Ⅱ';
+                }).catch(() => {});
+            } else {
+                audio.pause();
+                isPlaying = false;
+                iconPlay.classList.remove('hidden');
+                iconPause.classList.add('hidden');
+                surpriseMusicIcon.textContent = '▶';
+            }
+        });
+
+        audio.addEventListener('play', () => {
+            isPlaying = true;
+            iconPlay.classList.add('hidden');
+            iconPause.classList.remove('hidden');
+            if (surpriseMusicIcon) surpriseMusicIcon.textContent = 'Ⅱ';
+        });
+
+        audio.addEventListener('pause', () => {
+            isPlaying = false;
+            iconPlay.classList.remove('hidden');
+            iconPause.classList.add('hidden');
+            if (surpriseMusicIcon) surpriseMusicIcon.textContent = '▶';
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                if (surpriseOpen) closeSurprise();
+                if (galleryLightbox.classList.contains('open')) closeLightbox();
+            }
+        });
+
+    </script>
+</body>
+</html>
